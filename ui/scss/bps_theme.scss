@@ -4,6 +4,9 @@ $neutral_color:#868686;
 $institutional_color:#0975b2;
 $text_color:#363636;
 
+$title_size:1.5em;
+$subtitle_size:1em;
+$text_size:0.5em;
 
 $test_color:(#c6d5f1, #dec6f1, #c6f1c9, #f1c6c6, #f1e6c6, #c6f1f1);
 
@@ -40,12 +43,53 @@ $test_color:(#c6d5f1, #dec6f1, #c6f1c9, #f1c6c6, #f1e6c6, #c6f1f1);
 				width: 100%;
 				height: 80px;
 			}
+			#title{
+				background-color: nth($test_color,4);
+				font-size: $title_size;
+				text-align: center;
+			}
+			#subtitle{
+				font-size: $subtitle_size;
+				text-align: center;
+			}
 
 		}
 
 		#content{
 			background-color: nth($test_color,3);
 			width: 100%;
+			#table_title{
+				width: 100%;
+				font-size: $subtitle_size;
+				font-weight: bold;
+				text-align: end;
+			}
+			#separador{
+				width: 100%;
+				height: 1px;
+				background-color: $neutral_color;
+			}
+			ul{
+				padding: 0px 10px;
+				list-style: none;
+				li{
+					background-color: nth($test_color,5);
+					display: inline-flex;
+					width: 100%;
+					div{
+						width: 50%;
+						float: left;
+					}
+					#texto{
+						background-color: nth($test_color,5);
+					}
+					#rating{
+						background-color: nth($test_color,5);
+					}
+				}
+			}
+
+
 		}
 	}
 }
