@@ -5,11 +5,12 @@ $neutral_color:#868686;
 $institutional_color:#0975b2;
 $text_color:#363636;
 
-$title_size:1.5em;
-$subtitle_size:1em;
-$text_size:0.5em;
+$title_size:18pt;
+$subtitle_size:14pt;
+$text_size:14pt;
 
-$test_color:(#c6d5f1, #dec6f1, #c6f1c9, #f1c6c6, #f1e6c6, #c6f1f1);
+$test_color:(#c6d5f1, #dec6f1, #c6f1c9, #f1c6c6, #f1e6c6, #c6f1f1, #ef7373, #e773ef, #7377ef, #73efe9, #73ef88, #e2ef73, #efbd73);
+
 
 #tablet_container{
 	background-color: $background_color;
@@ -27,7 +28,7 @@ $test_color:(#c6d5f1, #dec6f1, #c6f1c9, #f1c6c6, #f1e6c6, #c6f1f1);
 #tablet_container #col1,#tablet_container #col3
 {
 	width: 106px;
-	background-color: nth($test_color,1);
+	// background-color: nth($test_color,1);
 }
 #tablet_container #col2{
 	width: 812px;
@@ -37,33 +38,42 @@ $test_color:(#c6d5f1, #dec6f1, #c6f1c9, #f1c6c6, #f1e6c6, #c6f1f1);
 		padding: 0px 10px;
 
 		#header{
-			background-color: nth($test_color,2);
+			// background-color: nth($test_color,2);
 			width: 100%;
 			#logo_container{
-				background-color: nth($test_color,4);
+				// background-color: nth($test_color,4);
 				width: 100%;
 				height: 80px;
 			}
 			#title{
-				background-color: nth($test_color,4);
+				// background-color: nth($test_color,4);
+				font-family: arial;
+				color:$institutional_color;
 				font-size: $title_size;
+				font-weight: bold;
 				text-align: center;
 			}
 			#subtitle{
+				color: $neutral_color;
 				font-size: $subtitle_size;
 				text-align: center;
+				margin-bottom: 10px;
 			}
 
 		}
 
 		#content{
-			background-color: nth($test_color,3);
+			// background-color: nth($test_color,3);
 			width: 100%;
 			#table_title{
 				width: 100%;
-				font-size: $subtitle_size;
+				font-family: arial;
+				// color:$neutral_color;
+				font-size: calc($text_size -1pt);
 				font-weight: bold;
 				text-align: end;
+				padding-right: 33px;
+    			box-sizing: border-box;
 			}
 			#separador{
 				width: 100%;
@@ -71,22 +81,33 @@ $test_color:(#c6d5f1, #dec6f1, #c6f1c9, #f1c6c6, #f1e6c6, #c6f1f1);
 				background-color: $neutral_color;
 			}
 			ul{
-				padding: 0px 10px;
+				padding: 0px 0px;
 				list-style: none;
+				margin-top: 5px;
+				.relleno{
+					background-color: $row_separation_color;
+				}
 				li{
-					background-color: nth($test_color,5);
+					// background-color: nth($test_color,5);
 					display: inline-flex;
 					width: 100%;
-					
+					padding: 10px 0px;
 					.texto_div{
-						width: 50%;
+						width: 70%;
 						float: left;
-						background-color: nth($test_color,5);
+						text-align: left;
+						font-size: $text_size;
+					    padding-left: 10px;
+					    vertical-align: bottom;
+					    line-height: 27px;
+						// background-color: nth($test_color,7);
 					}
 					.rating_div{
-						width: 50%;
+						width: 30%;
 						float: left;
-						background-color: nth($test_color,6);
+						padding-left: 9%;
+    					box-sizing: border-box;
+						// background-color: nth($test_color,6);
 					}
 				}
 			}

@@ -10,8 +10,7 @@
   float: left; }
 
 #tablet_container #col1, #tablet_container #col3 {
-  width: 106px;
-  background-color: #c6d5f1; }
+  width: 106px; }
 
 #tablet_container #col2 {
   width: 812px; }
@@ -19,45 +18,57 @@
     width: 100%;
     padding: 0px 10px; }
     #tablet_container #col2 #col2_padding #header {
-      background-color: #dec6f1;
       width: 100%; }
       #tablet_container #col2 #col2_padding #header #logo_container {
-        background-color: #f1c6c6;
         width: 100%;
         height: 80px; }
       #tablet_container #col2 #col2_padding #header #title {
-        background-color: #f1c6c6;
-        font-size: 1.5em;
+        font-family: arial;
+        color: #0975b2;
+        font-size: 18pt;
+        font-weight: bold;
         text-align: center; }
       #tablet_container #col2 #col2_padding #header #subtitle {
-        font-size: 1em;
-        text-align: center; }
+        color: #868686;
+        font-size: 14pt;
+        text-align: center;
+        margin-bottom: 10px; }
     #tablet_container #col2 #col2_padding #content {
-      background-color: #c6f1c9;
       width: 100%; }
       #tablet_container #col2 #col2_padding #content #table_title {
         width: 100%;
-        font-size: 1em;
+        font-family: arial;
+        font-size: calc($text_size -1pt);
         font-weight: bold;
-        text-align: end; }
+        text-align: end;
+        padding-right: 33px;
+        box-sizing: border-box; }
       #tablet_container #col2 #col2_padding #content #separador {
         width: 100%;
         height: 1px;
         background-color: #868686; }
       #tablet_container #col2 #col2_padding #content ul {
-        padding: 0px 10px;
-        list-style: none; }
+        padding: 0px 0px;
+        list-style: none;
+        margin-top: 5px; }
+        #tablet_container #col2 #col2_padding #content ul .relleno {
+          background-color: #dadada; }
         #tablet_container #col2 #col2_padding #content ul li {
-          background-color: #f1e6c6;
           display: inline-flex;
-          width: 100%; }
-         div#tablet_container #col2 #col2_padding #content ul li #texto_div {
-            width: 50%;
+          width: 100%;
+          padding: 10px 0px; }
+          #tablet_container #col2 #col2_padding #content ul li .texto_div {
+            width: 70%;
             float: left;
-            background-color: #868686; }
-          #tablet_container #col2 #col2_padding #content ul li #rating_div {
-            width: 50%;
+            text-align: left;
+            font-size: 14pt;
+            padding-left: 10px;
+            vertical-align: bottom;
+            line-height: 27px; }
+          #tablet_container #col2 #col2_padding #content ul li .rating_div {
+            width: 30%;
             float: left;
-            background-color: #c6f1f1; }
+            padding-left: 9%;
+            box-sizing: border-box; }
 
 /*# sourceMappingURL=bps_theme2.css.map */
