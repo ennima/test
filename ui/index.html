@@ -270,12 +270,12 @@
 
 //----------------------------------- INICIO VAlUES
 			$("#subir_btn").click(function(){
-				alert("Yei");
+				// alert("Yei");
 				//Get values from inputs id & text
 					var a_test_id = 1;
 					var a_fecha = moment().format('YYYY-MM-DD hh:mm:ss');
 					var a_client_id = 0;
-					var a_seller_id_ = 0;
+					var a_seller_id = 0;
 					var a_id = $("#id_1").val();
 					var a_texto = $("#texto_1").val();
 					var $rateYo_1 = $("#rateYo_1").rateYo();
@@ -285,7 +285,7 @@
 					$.ajax({
 					  method: "POST",
 					  url: "http://miru-interactive.mx/bps/add_pregunta.php",
-					  data: { id: "9", texto: "a_texto", valor: "5", test_id:"9", fecha:"9", client_id:"9", seller_id:"9" }
+					  data: { id: a_id, texto: a_texto, valor: a_valor_1, test_id:a_test_id, fecha:a_fecha, client_id:a_client_id, seller_id:a_seller_id }
 					})
 					  .done(function( msg ) {
 					    alert( "Data Saved: " + msg );
