@@ -1,0 +1,32 @@
+#tablet_container {
+  background-color: #f0f0f0;
+  width: 1024px;
+  height: 500px;
+  display: flex;
+  overflow: scroll; }
+
+#tablet_container #col1, #tablet_container #col2, #tablet_container #col3 {
+  display: flex;
+  float: left; }
+
+#tablet_container #col1, #tablet_container #col3 {
+  width: 106px;
+  background-color: #c6d5f1; }
+
+#tablet_container #col2 {
+  width: 812px; }
+  #tablet_container #col2 #col2_padding {
+    width: 100%;
+    padding: 0px 10px; }
+    #tablet_container #col2 #col2_padding #header {
+      background-color: #dec6f1;
+      width: 100%; }
+      #tablet_container #col2 #col2_padding #header #logo_container {
+        background-color: #f1c6c6;
+        width: 100%;
+        height: 80px; }
+    #tablet_container #col2 #col2_padding #content {
+      background-color: #c6f1c9;
+      width: 100%; }
+
+/*# sourceMappingURL=bps_theme.css.map */

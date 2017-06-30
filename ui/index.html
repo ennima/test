@@ -5,16 +5,47 @@
 	<title>Encuesta de Calidad</title>
 	<link rel="stylesheet" href="./css/vendor/normalize.css">
 	<link rel="stylesheet" href="./css/vendor/jquery.rateyo.min.css">
+	<link rel="stylesheet" href="./css/bps_theme.css">
 </head>
 <body>
-	<div id="rateYo"></div>
+	<!-- <div id="rateYo"></div> -->
+	<div id="tablet_container">
+		<div id="col1">
+			&nbsp;
+		</div>
+		<div id="col2">
+			<div id="col2_padding">
+				<div id="header">
+					<div id="logo_container">&nbsp;</div>
+					<div id="title">¡Muchas gracias por elegirnos!</div>
+					<div id="subtitle">Para mejorar la calidad de nuestros servicios, por favor dedique unos minutos para calificarnos.(3 min)</div>
+				</div>
+				<div id="content">
+					<div id="table_title">Calificación</div>
+					<div id="separador">&nbsp;</div>
+					<div id="pregunta_1">
+						<input type="hidden" name="id" value="1">
+						<input type="hidden" name="texto" value="¿Fue útil el producto o servicio que le ofrecimos?">
+						<span class="texto">¿Fue útil el producto o servicio que le ofrecimos?</span>
+						<span class="rating">
+							<div id="rateYo_1"></div>
+						</span>
 
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div id="col3">
+			&nbsp;
+		</div>
+	</div>
 	<script src="./js/vendor/jquery.min.js"></script>
 	<script src="./js/vendor/jquery.rateyo.min.js"></script>
 	<script>
 		$(document).ready(function(){
 			  
-			  $("#rateYo").rateYo({
+			  $("#rateYo_1").rateYo({
 			  	normalFill: "#868686",
 			  	ratedFill: "#0975b2",
 			  	starWidth:"30px",
@@ -24,7 +55,7 @@
 			  });
 
 			//Get rating value
-			var $rateYo = $("#rateYo").rateYo();
+			var $rateYo = $("#rateYo_1").rateYo();
 			var rating = $rateYo.rateYo("rating");
 			console.log(rating);
 		});
