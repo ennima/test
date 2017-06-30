@@ -268,15 +268,24 @@
 //----------------------------------- INICIO VAlUES
 
 					//Get values from inputs id & text
-					var test_id = 1;
-					var fecha = moment().format('YYYY-MM-DD hh:mm:ss');
-					var client_id = 0;
-					var seller_id_ = 0;
-					var id = $("#id_1").val();
-					var texto = $("#texto_1").val();
+					var a_test_id = 1;
+					var a_fecha = moment().format('YYYY-MM-DD hh:mm:ss');
+					var a_client_id = 0;
+					var a_seller_id_ = 0;
+					var a_id = $("#id_1").val();
+					var a_texto = $("#texto_1").val();
 					var $rateYo_1 = $("#rateYo_1").rateYo();
-					var valor_1 = $rateYo_1.rateYo("rating");
-					console.log("Rate 1: "+rating_1);
+					var a_valor_1 = $rateYo_1.rateYo("rating");
+					console.log("Rate 1: "+a_valor_1);
+
+					$.ajax({
+					  method: "POST",
+					  url: "http://127.0.0.1:89/test/add_pregunta.php",
+					  data: { id: "9", texto: "a_texto", valor: "5", test_id:"9", fecha:"9", client_id:"9", seller_id:"9" }
+					})
+					  .done(function( msg ) {
+					    alert( "Data Saved: " + msg );
+					  });
 
 
 
