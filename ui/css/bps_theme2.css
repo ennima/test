@@ -1,9 +1,10 @@
+body {
+  background-color: #f0f0f0; }
+
 #tablet_container {
-  background-color: #f0f0f0;
   width: 1024px;
   height: 500px;
-  display: flex;
-  overflow: scroll; }
+  display: flex; }
 
 #tablet_container #col1, #tablet_container #col2, #tablet_container #col3 {
   display: flex;

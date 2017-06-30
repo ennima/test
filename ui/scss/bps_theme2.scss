@@ -11,13 +11,13 @@ $text_size:14pt;
 
 $test_color:(#c6d5f1, #dec6f1, #c6f1c9, #f1c6c6, #f1e6c6, #c6f1f1, #ef7373, #e773ef, #7377ef, #73efe9, #73ef88, #e2ef73, #efbd73);
 
-
+body{background-color: $background_color;}
 #tablet_container{
-	background-color: $background_color;
+	// background-color: $background_color;
 	width: 1024px;
     height: 500px;
     display: flex;
-    overflow: scroll;
+    // overflow: scroll;
 }
 
 #tablet_container #col1, #tablet_container #col2,#tablet_container #col3{
