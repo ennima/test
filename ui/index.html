@@ -270,7 +270,7 @@
 
 //----------------------------------- INICIO VAlUES
 			$("#subir_btn").click(function(){
-				// alert("Yei");
+				
 				//Get values from inputs id & text
 					var a_test_id = 1;
 					var a_fecha = moment().format('YYYY-MM-DD hh:mm:ss');
@@ -290,6 +290,29 @@
 					  .done(function( msg ) {
 					    alert( "Data Saved: " + msg );
 					  });
+
+					var a_test_id = 1;
+					var a_fecha = moment().format("YYYY-MM-DD hh:mm:ss");
+					var a_client_id = 0;
+					var a_seller_id = 0;
+					var a_id = $("#id_9").val();
+					var a_texto = $("#texto_9").val();
+					var $rateYo_9 = $("#rateYo_9").rateYo();
+					var a_valor_9 = $rateYo_9.rateYo("rating");
+					console.log("Rate 9: "+a_valor_9);
+					$.ajax({
+					  method: "POST",
+					  url: "http://miru-interactive.mx/bps/add_pregunta.php",
+					  data: { id: a_id, texto: a_texto, valor: a_valor_9, test_id:a_test_id, fecha:a_fecha, client_id:a_client_id, seller_id:a_seller_id }
+					})
+					  .done(function( msg ) {
+					    alert( "Data Saved 9: " + msg );
+					  });
+
+
+
+
+
 			});
 					
 

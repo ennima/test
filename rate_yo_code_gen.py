@@ -39,7 +39,8 @@ def genera_rate_js():
 
 def genera_get_rate():
 	for i in range(1, num_preguntas+1):
-		genera = '//Get rating value '+str(i)+'\n	var $rateYo_'+str(i)+' = $("#rateYo_'+str(i)+'").rateYo();\n	var rating_'+str(i)+' = $rateYo_'+str(i)+'.rateYo("rating");\n	console.log("Rate '+str(i)+': "+rating_'+str(i)+');\n\n'
+		# genera = '//Get rating value '+str(i)+'\n	var $rateYo_'+str(i)+' = $("#rateYo_'+str(i)+'").rateYo();\n	var rating_'+str(i)+' = $rateYo_'+str(i)+'.rateYo("rating");\n	console.log("Rate '+str(i)+': "+rating_'+str(i)+');\n\n'
+		genera = '//Get values from inputs id & text\n					var a_test_id = 1;\n					var a_fecha = moment().format("YYYY-MM-DD hh:mm:ss");\n					var a_client_id = 0;\n					var a_seller_id = 0;\n					var a_id = $("#id_'+str(i)+'").val();\n					var a_texto = $("#texto_'+str(i)+'").val();\n					var $rateYo_'+str(i)+' = $("#rateYo_'+str(i)+'").rateYo();\n					var a_valor_'+str(i)+' = $rateYo_'+str(i)+'.rateYo("rating");\n					console.log("Rate '+str(i)+': "+a_valor_'+str(i)+');\n					$.ajax({\n					  method: "POST",\n					  url: "http://miru-interactive.mx/bps/add_pregunta.php",\n					  data: { id: a_id, texto: a_texto, valor: a_valor_'+str(i)+', test_id:a_test_id, fecha:a_fecha, client_id:a_client_id, seller_id:a_seller_id }\n					})\n					  .done(function( msg ) {\n					    alert( "Data Saved '+str(i)+': " + msg );\n					  });\n\n'
 		print(genera)
 
 genera_get_rate()
