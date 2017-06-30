@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Encuesta de Calidad</title>
+	<link rel="stylesheet" href="./css/vendor/normalize.css">
+	<link rel="stylesheet" href="./css/vendor/jquery.rateyo.min.css">
+</head>
+<body>
+	<div id="rateYo"></div>
+
+	<script src="./js/vendor/jquery.min.js"></script>
+	<script src="./js/vendor/jquery.rateyo.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			  
+			  $("#rateYo").rateYo({
+			  	normalFill: "#868686",
+			  	ratedFill: "#0975b2",
+			  	starWidth:"30px",
+			  	spacing: "5px",
+			    rating: 2,
+			    fullStar: true
+			  });
+
+			//Get rating value
+			var $rateYo = $("#rateYo").rateYo();
+			var rating = $rateYo.rateYo("rating");
+			console.log(rating);
+		});
+	</script>
+</body>
+</html>
