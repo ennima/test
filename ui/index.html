@@ -34,8 +34,104 @@
 						</li> -->
 
 						<!-- INICIO DE LAS PREGUNTAS -->
-						
+						<li>
+							<input type="hidden" id="id_1" name="id_1" value="1">
+						 	<input type="hidden" id="texto_1" name="texto_1" value="¿Fue útil el producto o servicio que le ofrecimos?">
+								<div class="texto_div">¿Fue útil el producto o servicio que le ofrecimos?</div>
+								<div class="rating_div">
+									<div id="rateYo_1"></div>
+								</div>
+							
+						</li>
 
+
+						<li class="relleno" >
+							<input type="hidden" id="id_2" name="id_2" value="2">
+						 	<input type="hidden" id="texto_2" name="texto_2" value="¿Cómo percibe el profesionalismo de nuestra empresa?">
+								<div class="texto_div">¿Cómo percibe el profesionalismo de nuestra empresa?</div>
+								<div class="rating_div">
+									<div id="rateYo_2"></div>
+								</div>
+							
+						</li>
+
+
+						<li>
+							<input type="hidden" id="id_3" name="id_3" value="3">
+						 	<input type="hidden" id="texto_3" name="texto_3" value="¿El representante causó buena impresión?">
+								<div class="texto_div">¿El representante causó buena impresión?</div>
+								<div class="rating_div">
+									<div id="rateYo_3"></div>
+								</div>
+							
+						</li>
+
+
+						<li class="relleno" >
+							<input type="hidden" id="id_4" name="id_4" value="4">
+						 	<input type="hidden" id="texto_4" name="texto_4" value="¿El representante fue capaz de escuchar sus necesidades?">
+								<div class="texto_div">¿El representante fue capaz de escuchar sus necesidades?</div>
+								<div class="rating_div">
+									<div id="rateYo_4"></div>
+								</div>
+							
+						</li>
+
+
+						<li>
+							<input type="hidden" id="id_5" name="id_5" value="5">
+						 	<input type="hidden" id="texto_5" name="texto_5" value="¿El representante siempre propuso soluciones a sus necesidades?">
+								<div class="texto_div">¿El representante siempre propuso soluciones a sus necesidades?</div>
+								<div class="rating_div">
+									<div id="rateYo_5"></div>
+								</div>
+							
+						</li>
+
+
+						<li class="relleno" >
+							<input type="hidden" id="id_6" name="id_6" value="6">
+						 	<input type="hidden" id="texto_6" name="texto_6" value="¿Hasta qué punto está de acuerdo con la preparación del representante?">
+								<div class="texto_div">¿Hasta qué punto está de acuerdo con la preparación del representante?</div>
+								<div class="rating_div">
+									<div id="rateYo_6"></div>
+								</div>
+							
+						</li>
+
+
+						<li>
+							<input type="hidden" id="id_7" name="id_7" value="7">
+						 	<input type="hidden" id="texto_7" name="texto_7" value="¿Cuál es su impresión final del representante?">
+								<div class="texto_div">¿Cuál es su impresión final del representante?</div>
+								<div class="rating_div">
+									<div id="rateYo_7"></div>
+								</div>
+							
+						</li>
+
+
+						<li class="relleno" >
+							<input type="hidden" id="id_8" name="id_8" value="8">
+						 	<input type="hidden" id="texto_8" name="texto_8" value="¿Cuál es su impresión final de la cita?">
+								<div class="texto_div">¿Cuál es su impresión final de la cita?</div>
+								<div class="rating_div">
+									<div id="rateYo_8"></div>
+								</div>
+							
+						</li>
+
+
+						<li>
+							<input type="hidden" id="id_9" name="id_9" value="9">
+						 	<input type="hidden" id="texto_9" name="texto_9" value="¿Cuál es su impresión final del producto o servicio presentado?">
+								<div class="texto_div">¿Cuál es su impresión final del producto o servicio presentado?</div>
+								<div class="rating_div">
+									<div id="rateYo_9"></div>
+								</div>
+							
+						</li>						
+						
 						<!-- FIN DE LAS PREGUNTAS -->
 					</ul>
 					
@@ -49,6 +145,7 @@
 	</div>
 	<script src="./js/vendor/jquery.min.js"></script>
 	<script src="./js/vendor/jquery.rateyo.min.js"></script>
+	<script src="./js/vendor/moment.js"></script>
 	<script>
 		$(document).ready(function(){
 			  
@@ -170,7 +267,16 @@
 
 //----------------------------------- INICIO VAlUES
 
-
+					//Get values from inputs id & text
+					var test_id = 1;
+					var fecha = moment().format('YYYY-MM-DD hh:mm:ss');
+					var client_id = 0;
+					var seller_id_ = 0;
+					var id = $("#id_1").val();
+					var texto = $("#texto_1").val();
+					var $rateYo_1 = $("#rateYo_1").rateYo();
+					var valor_1 = $rateYo_1.rateYo("rating");
+					console.log("Rate 1: "+rating_1);
 
 
 

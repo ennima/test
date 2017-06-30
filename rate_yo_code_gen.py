@@ -28,13 +28,13 @@ def genera_li():
 		genera = '<li'+class_separa+'>\n	<input type="hidden" id="id_'+str(i)+'" name="id_'+str(i)+'" value="'+str(i)+'">\n 	<input type="hidden" id="texto_'+str(i)+'" name="texto_'+str(i)+'" value="'+text_preguntas[i-1]+'">\n		<div class="texto_div">'+text_preguntas[i-1]+'</div>\n		<div class="rating_div">\n			<div id="rateYo_'+str(i)+'"></div>\n		</div>\n	\n</li>\n\n'
 		print(genera)
 
-genera_li()
+# genera_li()
 def genera_rate_js():
 	for i in range(1,num_preguntas+1):
 		genera = '$("#rateYo_'+str(i)+'").rateYo({\n			  	normalFill: "#868686",\n			  	ratedFill: "#0975b2",\n			  	starWidth:"30px",\n			  	// spacing: "5px",\n			    rating: 1,\n			    fullStar: true,\n			    precision: 2\n			  });\n\n'
 		print(genera)
 
-#genera_rate_js()
+# genera_rate_js()
 
 
 def genera_get_rate():
@@ -42,4 +42,4 @@ def genera_get_rate():
 		genera = '//Get rating value '+str(i)+'\n	var $rateYo_'+str(i)+' = $("#rateYo_'+str(i)+'").rateYo();\n	var rating_'+str(i)+' = $rateYo_'+str(i)+'.rateYo("rating");\n	console.log("Rate '+str(i)+': "+rating_'+str(i)+');\n\n'
 		print(genera)
 
-# genera_get_rate()
+genera_get_rate()
