@@ -133,8 +133,11 @@
 						</li>						
 						
 						<!-- FIN DE LAS PREGUNTAS -->
+
 					</ul>
-					
+					<center>
+						<button id="subir_btn" >Subir</button>
+					</center>
 				</div>
 				
 			</div>
@@ -266,8 +269,9 @@
 //----------------------------------- FIN MAKING RATES
 
 //----------------------------------- INICIO VAlUES
-
-					//Get values from inputs id & text
+			$("#subir_btn").click(function(){
+				alert("Yei");
+				//Get values from inputs id & text
 					var a_test_id = 1;
 					var a_fecha = moment().format('YYYY-MM-DD hh:mm:ss');
 					var a_client_id = 0;
@@ -280,12 +284,14 @@
 
 					$.ajax({
 					  method: "POST",
-					  url: "http://127.0.0.1:89/test/add_pregunta.php",
+					  url: "http://miru-interactive.mx/bps/add_pregunta.php",
 					  data: { id: "9", texto: "a_texto", valor: "5", test_id:"9", fecha:"9", client_id:"9", seller_id:"9" }
 					})
 					  .done(function( msg ) {
 					    alert( "Data Saved: " + msg );
 					  });
+			});
+					
 
 
 
