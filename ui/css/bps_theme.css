@@ -1,2 +1,79 @@
-#tablet_container{background-color:#f0f0f0;width:1024px;height:500px;display:flex;overflow:scroll}#tablet_container #col1,#tablet_container #col2,#tablet_container #col3{display:flex;float:left}#tablet_container #col1,#tablet_container #col3{width:106px;background-color:#c6d5f1}#tablet_container #col2{width:812px}#tablet_container #col2 #col2_padding{width:100%;padding:0px 10px}#tablet_container #col2 #col2_padding #header{background-color:#dec6f1;width:100%}#tablet_container #col2 #col2_padding #header #logo_container{background-color:#f1c6c6;width:100%;height:80px}#tablet_container #col2 #col2_padding #header #title{background-color:#f1c6c6;font-size:1.5em;text-align:center}#tablet_container #col2 #col2_padding #header #subtitle{font-size:1em;text-align:center}#tablet_container #col2 #col2_padding #content{background-color:#c6f1c9;width:100%}#tablet_container #col2 #col2_padding #content #table_title{width:100%;font-size:1em;font-weight:bold;text-align:end}#tablet_container #col2 #col2_padding #content #separador{width:100%;height:1px;background-color:#868686}#tablet_container #col2 #col2_padding #content ul{padding:0px 10px;list-style:none}#tablet_container #col2 #col2_padding #content ul li{background-color:#f1e6c6;display:inline-flex;width:100%}#tablet_container #col2 #col2_padding #content ul li div{width:50%;float:left}#tablet_container #col2 #col2_padding #content ul li #texto{background-color:#f1e6c6}#tablet_container #col2 #col2_padding #content ul li #rating{background-color:#f1e6c6}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/enrique\.nieto\/Documents\/develops\%202017\/Utilidades\/test\/ui\/scss\/bps_theme\.scss}line{font-family:\0000314}}
+#tablet_container {
+  background-color: #f0f0f0;
+  width: 1024px;
+  height: 500px;
+  display: flex;
+  overflow: scroll; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/enrique\.nieto\/Documents\/develops\%202017\/Utilidades\/test\/ui\/scss\/bps_theme\.scss}line{font-family:\0000322}}
+#tablet_container #col1, #tablet_container #col2, #tablet_container #col3 {
+  display: flex;
+  float: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/enrique\.nieto\/Documents\/develops\%202017\/Utilidades\/test\/ui\/scss\/bps_theme\.scss}line{font-family:\0000327}}
+#tablet_container #col1, #tablet_container #col3 {
+  width: 106px;
+  background-color: #c6d5f1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/enrique\.nieto\/Documents\/develops\%202017\/Utilidades\/test\/ui\/scss\/bps_theme\.scss}line{font-family:\0000332}}
+#tablet_container #col2 {
+  width: 812px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/enrique\.nieto\/Documents\/develops\%202017\/Utilidades\/test\/ui\/scss\/bps_theme\.scss}line{font-family:\0000335}}
+  #tablet_container #col2 #col2_padding {
+    width: 100%;
+    padding: 0px 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/enrique\.nieto\/Documents\/develops\%202017\/Utilidades\/test\/ui\/scss\/bps_theme\.scss}line{font-family:\0000339}}
+    #tablet_container #col2 #col2_padding #header {
+      background-color: #dec6f1;
+      width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/enrique\.nieto\/Documents\/develops\%202017\/Utilidades\/test\/ui\/scss\/bps_theme\.scss}line{font-family:\0000342}}
+      #tablet_container #col2 #col2_padding #header #logo_container {
+        background-color: #f1c6c6;
+        width: 100%;
+        height: 80px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/enrique\.nieto\/Documents\/develops\%202017\/Utilidades\/test\/ui\/scss\/bps_theme\.scss}line{font-family:\0000347}}
+      #tablet_container #col2 #col2_padding #header #title {
+        background-color: #f1c6c6;
+        font-size: 1.5em;
+        text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/enrique\.nieto\/Documents\/develops\%202017\/Utilidades\/test\/ui\/scss\/bps_theme\.scss}line{font-family:\0000352}}
+      #tablet_container #col2 #col2_padding #header #subtitle {
+        font-size: 1em;
+        text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/enrique\.nieto\/Documents\/develops\%202017\/Utilidades\/test\/ui\/scss\/bps_theme\.scss}line{font-family:\0000359}}
+    #tablet_container #col2 #col2_padding #content {
+      background-color: #c6f1c9;
+      width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/enrique\.nieto\/Documents\/develops\%202017\/Utilidades\/test\/ui\/scss\/bps_theme\.scss}line{font-family:\0000362}}
+      #tablet_container #col2 #col2_padding #content #table_title {
+        width: 100%;
+        font-size: 1em;
+        font-weight: bold;
+        text-align: end; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/enrique\.nieto\/Documents\/develops\%202017\/Utilidades\/test\/ui\/scss\/bps_theme\.scss}line{font-family:\0000368}}
+      #tablet_container #col2 #col2_padding #content #separador {
+        width: 100%;
+        height: 1px;
+        background-color: #868686; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/enrique\.nieto\/Documents\/develops\%202017\/Utilidades\/test\/ui\/scss\/bps_theme\.scss}line{font-family:\0000373}}
+      #tablet_container #col2 #col2_padding #content ul {
+        padding: 0px 10px;
+        list-style: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/enrique\.nieto\/Documents\/develops\%202017\/Utilidades\/test\/ui\/scss\/bps_theme\.scss}line{font-family:\0000376}}
+        #tablet_container #col2 #col2_padding #content ul li {
+          background-color: #f1e6c6;
+          display: inline-flex;
+          width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/enrique\.nieto\/Documents\/develops\%202017\/Utilidades\/test\/ui\/scss\/bps_theme\.scss}line{font-family:\0000381}}
+          #tablet_container #col2 #col2_padding #content ul li #texto {
+            width: 50%;
+            float: left;
+            background-color: #f1e6c6; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/enrique\.nieto\/Documents\/develops\%202017\/Utilidades\/test\/ui\/scss\/bps_theme\.scss}line{font-family:\0000386}}
+          #tablet_container #col2 #col2_padding #content ul li #rating {
+            width: 50%;
+            float: left;
+            background-color: #f1e6c6; }
+
 /*# sourceMappingURL=bps_theme.css.map */

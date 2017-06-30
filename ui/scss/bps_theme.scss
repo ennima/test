@@ -1,3 +1,4 @@
+
 $background_color:#f0f0f0;
 $row_separation_color:#dadada;
 $neutral_color:#868686;
@@ -76,14 +77,15 @@ $test_color:(#c6d5f1, #dec6f1, #c6f1c9, #f1c6c6, #f1e6c6, #c6f1f1);
 					background-color: nth($test_color,5);
 					display: inline-flex;
 					width: 100%;
-					div{
+					
+					#texto{
 						width: 50%;
 						float: left;
-					}
-					#texto{
 						background-color: nth($test_color,5);
 					}
 					#rating{
+						width: 50%;
+						float: left;
 						background-color: nth($test_color,5);
 					}
 				}
